@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoEnergyBike</title>
+    <link rel="icon" href="scr/imgs/ico.png">
+    <link rel="stylesheet" href="/scr/css/stylesheet.css">
+    <script src="scr/script/script.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="scr/imgs/logo.png" alt="" height="100px">
+    </nav>
+    <section class="intro">
+        <h1 class="title" id="projeto">A Bicicleta do Futuro</h1>
+        <p>
+            A EcoEnergyBike tem como principal objetivo a substituição das bicletas padrões de centro de compartilhamento de bicletas. O diferencial desta bicicleta é sua capacidade de gerar e armazenar energia ao pedalá-la.<br><br>
+            A bicleta possui um pequeno gerador que transforma a energia mecânica gerada nos pedais em energia elétrica, algo como o que ocorre em turbinas eólicas. A energia que é produzida é levada para uma bateria na parte traseira da bicicleta.
+        </p>
+        <section class="riding_bike">
+            <img src="scr/imgs/bike.png" alt="bike">
+        </section>
+        <h1 class="title" style="margin-top: 10%;" id="dados">Dados</h1>
+        <div class="dados">
+            <section class="right_dado">
+                <p>Uma bicicleta tem a capacidade de gerar 0,5 kilowatts em uma hora percorrida</p>
+            </section>
+        </div>
+        <div class="dados">
+            <section class="left_dado">
+                <p>Cerca de 56% da população de São Paulo praticam atividade física</p>
+            </section>
+        </div>
+        <div class="dados">
+            <section class="right_dado">
+                <p>56% da população de São Paulo é aproximatamente 6.35 milhões de pessoas</p>
+            </section>
+        </div>
+        <div class="dados">
+            <section class="left_dado">
+                <p>Se esses 6.35 milhões utilizassem bicicletas, com cada um gerando 0,5 kilowatts, gerariamos 3,17 milhões de kilowatts ou 3170 megawatts</p>
+            </section>
+        </div>
+        <div class="dados">
+            <section class="right_dado">
+                <p>Levanto em consideração que o killowatts esta cotado no valor de R$0,92, gerariamos R$2.910.000,00 em energia limpa</p>
+            </section>
+        </div>
+        <div class="dados">
+            <section class="left_dado">
+                <p>Esse valor, somente em um dia e somente em São Paulo</p>
+            </section>
+        </div>
+        <h1 class="title" id="funcionamento">Funcionamento</h1>
+        <p style="margin: 10%; margin-block: 1%">A bicicleta terá um gerador, como na imagem abaixo, conectado em seus pedais. Esses transformaram a energia mecânica realizada em energia elétrica.<br>
+            Geradores como esses são de fácil acesso e são comumente utilizados
+        </p>
+        <section class="bike_blueprint">
+            <img src="scr/imgs/gerador.png" style="margin-left: 10%" >
+        </section>
+        <p style="margin: 5%; margin-block: 1%">Tais geradores estarão ligados à baterias, como essa da imagem a seguir, que guardarão a energia gerada.<br>
+            Baterias como essas já existem e tem a capacidade de suportar até 8 kilowatts
+        </p>
+        <section class="bike_blueprint">
+            <img src="scr/imgs/battery.png" alt="">
+        </section>
+        <p style="margin: 5%; margin-block: 1%">Essas bateria serão descarregadas nos próprios postos de compartilhamento de bicicletas em equipamentos semelhantes à caixas 24 horas. <br>
+            Estes serão acessados através de um cartão, e após absorverem a energia, geraram um desconto à conta de luz da pessoa cadastrada no cartão
+        </p>
+        <section class="energy_bike">
+            <img src="scr/imgs/banco_energia.jpg" alt="">
+        </section>
+        <section class="screen_bank">
+            <h1>BANK ENERGY</h1>
+            <p id="screen_text">please insert your cart</p>
+                <button class="screen_button" id="button_yes" onclick="no_deposit()">NO</button>
+                <button class="screen_button" id="button_no" onclick="yes_deposit()">YES</button>
+                <button class="screen_button" id="button_ok" onclick="no_deposit()">OK</button>
+        </section>
+        <section class="cart_place">
+            <div class="entrance"></div>
+            <div class="bottom_entrance"></div>
+        </section>
+        <div class="cart" id="card" onclick="card_insert()">
+            <div class="chip"></div>
+            <div class="faixa"></div>
+        </div>
+        <h1 class="title" id="beneficios">Beneficios</h1>
+        <div class="dados_img">
+            <section class="right_dado_img">
+                <h1>Trânsito</h1>
+                <p>Com o aumento de pessoas utilizando de bicicletas para se locomover, haverá uma diminuição do trânsito de carros<br>Com isso deixando a ruas livres para quem realmente precisa</p>   
+            </section>
+            <section class="right_dado_image">
+                <img src="scr/imgs/trânsito.jpg" alt="">
+            </section>
+
+        </div>
+        <div class="dados_img">
+            <section class="left_dado_img">
+                <h1>Poluição Fluvial</h1>
+                <p>Com a geração de energia através de bicicletas haverá a diminuição da necessidade de usinas hidroelétricas que causam poluição fluvial ao rios e degradação ambiental ao seus entornos</p>
+            </section>
+            <section class="right_dado_image">
+                <img src="scr/imgs/poluição_fluvial.jpg" alt="">
+            </section>
+        </div>
+        <div class="dados_img">
+            <section class="right_dado_img">
+                <h1>Ecônomia</h1>
+                <p>Como a energia gerada é descontada da conta de luz do mês, o projeto permite uma ecônomia para os usuários. Assim permitindo uma maior poder de compra. Assim sendo melhorando a ecônomia federal</p>   
+            </section>
+            <section class="right_dado_image">
+                <img src="scr/imgs/economia.jpg" alt="">
+            </section>
+
+        </div>
+        <div class="dados_img">
+            <section class="left_dado_img">
+                <h1>Sedentarismo</h1>
+                <p>O projeto também tem foco na saúde pública já que através dela há um incentivo à diminuição do sedentarismo</p>
+            </section>
+            <section class="right_dado_image">
+                <img src="scr/imgs/sedentarismo.jpg" alt="">
+            </section>
+        </div>
+    </section>
+    <section class="btn_way">
+        <div class="menu" id="menu">
+            <button class="menu_button" id="btn_menu" onclick="OpenMenu()">
+                <span class="eva--menu-outline" id="menu_span"></span>
+            </button>
+            <ul id="list_menu">
+                <li><a href="#projeto">Projeto</a></li>
+                <li><a href="#dados">Dados</a></li>
+                <li><a href="#funcionamento">Funcionamento</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
