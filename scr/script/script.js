@@ -104,3 +104,19 @@ function yes_deposit(){
     setTimeout(()=> ok_btn.style.display = 'inline', 3000)
     setTimeout(() => text.textContent = 'Sua bateria tinha uma carga de 1 kilowatts. Voce economizou R$0,92 em sua conta de luz, hoje. Parabens!', 3000)
 }
+
+function zueira(){
+    var card = document.getElementById('card')
+    var text = document.getElementById('screen_text')
+    var title = document.getElementById('title_screen')
+    var video = document.getElementById('video_z')
+
+    card.style.animation = 'card_inside 1s forwards ease-in-out'
+    card.classList.add('nohover')
+    setTimeout(() => text.textContent = 'Reading', 1000)
+    setTimeout(()=> text.style.display = 'none', 3000)
+    setTimeout(()=> title.style.display = 'none', 3000)
+    setTimeout(()=> video.style.display = 'inline', 3000)
+    setTimeout(()=> video.play(), 3000)
+    setTimeout(()=> text.textContent = 'Ola xxxx-xxx, deseja fazer um deposito?', 3000)
+}
